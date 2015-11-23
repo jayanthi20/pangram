@@ -2,7 +2,7 @@ var MongoClient=require('mongodb').MongoClient
 
 function pangram(str,cb){
 	var sentence=str
-	str=str.toLowerCase().replace(/\s/g, '').split("")
+	str=str.toLowerCase().split("")
 	var count={};
 	str.forEach(function(i) {
 		if (i.match(/[a-z]/)) {
